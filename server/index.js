@@ -1,6 +1,5 @@
-import express from 'express'
+import { startServer } from './app.js'
+import { typeDefs } from './graphql/typeDefs.js'
+import { resolvers } from './graphql/resolvers.js'
 
-const app = express()
-
-app.listen(3000)
-console.log("Server on port", 3000)
+startServer( typeDefs, resolvers )
