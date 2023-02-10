@@ -24,12 +24,13 @@ export const typeDefs = gql`
     description: String
     createdAt: String
     updatedAt: String
+    tasks: [Task]
   }
 
   type Task {
     _id: ID
     title: String
-    projectId: ID
+    project: Project
     createdAt: String
     updatedAt: String
   }
