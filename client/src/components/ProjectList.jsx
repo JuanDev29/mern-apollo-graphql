@@ -10,7 +10,7 @@ export function ProjectList() {
   if (error) return <p>error</p>
 
   return (
-    <div>
+    <div className='overflow-y-auto h-80 w-full px-5'>
       {
         data.getProjects.map((project) => (
           <ProjectCard key={project._id} project={project}/>

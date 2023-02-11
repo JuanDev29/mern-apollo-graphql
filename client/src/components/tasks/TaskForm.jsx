@@ -29,12 +29,16 @@ export function TaskForm() {
   }
 
   return (
-    <div>
+    <div className='p-2 my-1'>
       {error && <p>{error.message}</p>}
       <form onSubmit={handleSubmit}>
-        <input type="text" name="title" />
+        <input type="text" name="title" 
+        className="bg-zinc-800 text-white rounded-lg 
+        shadow-lg p-2 block mb-3 w-full"
+        placeholder='Add a new Task' />
         <button
           disabled={loading}
+          className='bg-sky-500 px-2 py-1 rounded-md text-sm mb-3 disabled:bg-zinc-400 w-full'
         >Add</button>
       </form>
     </div>
