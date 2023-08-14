@@ -1,6 +1,7 @@
 import { TaskCard } from './TaskCard'
 
 export function TaskList({ tasks }) {
+  console.log(tasks)
   return (
     <div>
       {
