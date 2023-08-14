@@ -13,7 +13,7 @@ export function ProjectForm() {
       {
         query: GET_PROJECTS
       },
-      "GetProjects"
+      "getProjects"
     ]
   })
 

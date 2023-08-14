@@ -9,6 +9,8 @@ export function ProjectList() {
   if (loading) return <p>Loading</p>
   if (error) return <p>error</p>
 
+  console.log(data.getProjects)
+
   return (
     <div className='overflow-y-auto h-80 w-full px-5'>
       {
